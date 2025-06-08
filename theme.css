@@ -1,0 +1,44 @@
+.light-theme {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --hover-color: #e9ecef;
+}
+
+.dark-theme {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --card-bg: #343a40;
+  --border-color: #495057;
+  --hover-color: #495057;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.stat-card, .chart-container, .modal-content, table, tr:nth-child(even) {
+  background-color: var(--card-bg);
+}
+
+tr:hover {
+  background-color: var(--hover-color);
+}
+
+select, input[type="text"], input[type="date"], textarea {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.btn-secondary {
+  background-color: var(--card-bg);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover-color);
+}
